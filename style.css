@@ -1,0 +1,26 @@
+:root {
+  --bg: #ffffff; --fg: #1a1a1f; --muted: #5a5a68; --rule: #e4e4ea; --accent: #4b40d9;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #131318; --fg: #ececf2; --muted: #9a9aab; --rule: #2a2a34; --accent: #9b92ff; }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; padding: 4rem 1.5rem 6rem;
+  background: var(--bg); color: var(--fg);
+  font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+main { max-width: 44rem; margin: 0 auto; }
+h1 { font-size: 2.1rem; line-height: 1.2; margin: 0 0 .4rem; letter-spacing: -.02em; }
+h2 { font-size: 1.15rem; margin: 2.4rem 0 .6rem; letter-spacing: -.01em; }
+p, li { color: var(--fg); }
+.lede { color: var(--muted); font-size: 1.05rem; margin: 0 0 2.5rem; }
+.updated { color: var(--muted); font-size: .9rem; }
+a { color: var(--accent); }
+hr { border: 0; border-top: 1px solid var(--rule); margin: 3rem 0; }
+nav { margin-bottom: 3rem; font-size: .95rem; }
+nav a { margin-right: 1.2rem; }
+.apps { display: grid; gap: 1rem; margin: 2rem 0; }
+.app { border: 1px solid var(--rule); border-radius: 12px; padding: 1.1rem 1.3rem; }
+.app h3 { margin: 0 0 .3rem; font-size: 1.05rem; }
+.app p { margin: 0; color: var(--muted); font-size: .95rem; }
