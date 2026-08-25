@@ -26,7 +26,9 @@
   <p>If you supply an OpenAI API key, it is stored in the macOS Keychain on your device and is transmitted only to OpenAI.</p>
 
   <h2>Dictabar — microphone and system audio</h2>
-  <p>Dictabar requests microphone access to record speech, and audio capture access for the optional system audio transcription feature. Both are used only while you actively trigger a recording.</p>
+  <p>Dictabar requests microphone access to record speech, and audio capture access for the optional system audio transcription feature.</p>
+  <p>The menu bar icon reacts when Dictabar can hear you. To do that, the app measures the input level of your microphone continuously while it is running — which is why macOS shows the orange microphone indicator even when you are not dictating. Only loudness is read. Nothing is recorded, kept, or sent anywhere during this monitoring.</p>
+  <p>Audio is captured and transcribed only while you hold a shortcut yourself. System audio is captured only while you hold the system audio shortcut.</p>
 
   <h2>CleanBarQuick</h2>
   <p>CleanBarQuick shows and hides menu bar icons. It requires no special permissions, has no network access, and stores nothing beyond a single local preference recording whether icons are currently hidden.</p>
